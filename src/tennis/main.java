@@ -1,6 +1,5 @@
 package tennis;
 
-import java.util.Iterator;
 import java.util.Scanner;
 
 import control.Resultado;
@@ -23,7 +22,7 @@ public class main {
 			jogosResultados[i] = resultados;
 		}
 		
-		int grupo = resultado.resultado(jogosResultados);
+		long grupo = resultado.resultado(jogosResultados);
 		
 		System.out.println(grupo);
 	}

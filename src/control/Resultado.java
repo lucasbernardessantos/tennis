@@ -2,7 +2,7 @@ package control;
 
 public class Resultado {
 
-	public int resultado(String[] jogos) {
+	public long resultado(String[] jogos) {
 		
 		int qntVitorias = 0;
 		
