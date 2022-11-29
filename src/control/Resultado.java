@@ -8,7 +8,6 @@ public class Resultado {
 		
 		for(String resultado : jogos) {
 			if(resultado.equals("v")) {
-				System.out.println("Jogo: " + resultado);
 				qntVitorias++;
 			}
 		}
