@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/lucasbernardessantos/tennis.git'
-                bat '.\mvnw clean compile'
+                echo "Hello World"
             }
         }
     }
