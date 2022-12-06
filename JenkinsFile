@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                git 'https://github.com/lucasbernardessantos/tennis.git'
+                sh 'java src/teste/ResultadoTeste.java'
+            }
+        }
+    }
+}
