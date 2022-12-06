@@ -5,13 +5,13 @@ pipeline {
       stage('Build') {
             steps {
                 git 'https://github.com/lucasbernardessantos/tennis.git'
-                sh 'javac -cp ./src ./src/tennis/main.java'
+                sh 'javac -cp ./src/ ./src/tennis/main.java'
             }
         }
         stage('Test') {
             steps {
-                sh 'javac -d ./src/ -cp ./lib/junit-4.12.jar: ./src .src/test/ResultadoTeste.java'
-                sh 'javac -cp ./src/:./lib/junit-4.12.jar:./lib/hamcrest-core-1.3.jar org.junit.runner.JunitCore test.ResultadoTeste'
+                sh 'javac -d ./src/ -cp ./lib/junit-4.12.jar:./src .src/test/ResultadoTeste.java'
+                sh 'java -cp ./src/:./lib/junit-4.12.jar:./lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore test.ResultadoTeste'
             }
         }
     }
