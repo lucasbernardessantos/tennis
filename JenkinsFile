@@ -5,7 +5,7 @@ pipeline {
         stage('Test') {
             steps {
                 git 'https://github.com/lucasbernardessantos/tennis.git'
-                java ./src/teste/ResultadoTeste.java
+                java './src/teste/ResultadoTeste.java'
             }
         }
     }
