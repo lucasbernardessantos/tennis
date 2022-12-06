@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/lucasbernardessantos/tennis.git'
-                sh 'java src/teste/ResultadoTeste.java'
+                sh 'java clean compile'
             }
         }
     }
