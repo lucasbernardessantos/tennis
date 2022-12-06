@@ -19,7 +19,7 @@ public class ResultadoTeste {
 	@Test
 	public void teste_resultado_1() {
 		String[] jogos = {"v","v","v","v","v","v"};
-		Assert.assertEquals(1, resultado.resultado(jogos), 0);
+		Assert.assertEquals(3, resultado.resultado(jogos), 0);
 	}
 	
 	@Test
