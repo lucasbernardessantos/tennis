@@ -5,7 +5,7 @@ pipeline {
         stage('Test') {
             steps {
                 git 'https://github.com/lucasbernardessantos/tennis.git'
-                sh 'javac -jar ./lib/junit-4.1.2.jar'
+                sh 'javac -cp ./lib/junit-4.1.2.jar'
                 sh 'java ./src/teste/ResultadoTeste.java'
             }
         }
