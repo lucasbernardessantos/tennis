@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Test') {
             steps {
                 git 'https://github.com/lucasbernardessantos/tennis.git'
-                echo "Hello World"
+                java ./src/teste/ResultadoTeste.java
             }
         }
     }
